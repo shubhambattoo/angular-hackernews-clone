@@ -1,27 +1,38 @@
-# HackerNewsClone
+# HackernewsClone Made with Angular
+This is a PWA , can be installed on any smartphone and used as an Web APP. (Without login)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+![](hackernews.PNG)
 
-## Development server
+[Live Demo](https://hackernews-clone-9c509.firebaseapp.com)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Author
 
-## Code scaffolding
+👤 **Shubham Battoo**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Twitter: [@Shubham_batt](https://twitter.com/Shubham_batt)
+* Github: [@shubhambattoo](https://github.com/shubhambattoo)
 
-## Build
+## Stories
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+[News](https://hackernews-clone-9c509.firebaseapp.com/news/1)<br>
+[BestStories](https://hackernews-clone-9c509.firebaseapp.com/beststories/1)<br>
+[NewStories](https://hackernews-clone-9c509.firebaseapp.com/newstories/1)<br>
+[ShowStories](https://hackernews-clone-9c509.firebaseapp.com/showstories/1)<br>
+[AskStories](https://hackernews-clone-9c509.firebaseapp.com/askstories/1)
 
-## Running unit tests
+## Development 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Clone the repo and run `npm install` to install all the dependencies
 
-## Running end-to-end tests
+## Usage
+Once the dependencies are installed, you can run `npm start/ng serve` to start the application.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+App will be live at localhost:4200
 
-## Further help
+## 🤝 Contributing
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/shubhambattoo/notes-in/issues).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
