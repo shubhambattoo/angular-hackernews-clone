@@ -1,0 +1,46 @@
+<header>
+  <nav>
+    <div class="d-flex">
+      <div class="brand" routerLink="/">
+        HN
+      </div>
+
+      <ul>
+        <li>
+          <a routerLink="/beststories/1" routerLinkActive="active-link">best</a>
+        </li>
+        <li>
+          <a routerLink="/newstories/1" routerLinkActive="active-link">new</a>
+        </li>
+        <li>
+          <a routerLink="/showstories/1" routerLinkActive="active-link">show</a>
+        </li>
+        <li>
+          <a routerLink="/askstories/1" routerLinkActive="active-link">ask</a>
+        </li>
+        <li>
+          <a routerLink="/jobstories/1" routerLinkActive="active-link">jobs</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cog" (click)="showDropDownEvent()">
+      <i class="fas fa-cog"></i>
+	</div>
+	
+	<div class="dropdown-menu" [ngClass]="showDropdown ? 'd-block' : 'd-none'" >
+
+		<div class="dropdown-list">
+
+			<ul>
+				<li><a (click)="changeTheme('default')">Default(Light)</a></li>
+				<li><a (click)="changeTheme('dark')">Night Dark</a></li>
+				<li><a (click)="changeTheme('amoled')">Black Amoled</a></li>
+			</ul>
+
+		</div>
+
+	</div>
+
+  </nav>
+</header>
