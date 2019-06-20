@@ -3,7 +3,7 @@ This is a PWA , can be installed on any smartphone and used as an Web APP. (With
 
 ![](hackernews.PNG)
 
-[Live Demo](https://hackernews-clone-9c509.firebaseapp.com)
+[Live Demo](https://ng-hackernews-clone.surge.sh)
 
 ## Author
 
@@ -14,11 +14,11 @@ This is a PWA , can be installed on any smartphone and used as an Web APP. (With
 
 ## Stories
 
-[News](https://hackernews-clone-9c509.firebaseapp.com/news/1)<br>
-[BestStories](https://hackernews-clone-9c509.firebaseapp.com/beststories/1)<br>
-[NewStories](https://hackernews-clone-9c509.firebaseapp.com/newstories/1)<br>
-[ShowStories](https://hackernews-clone-9c509.firebaseapp.com/showstories/1)<br>
-[AskStories](https://hackernews-clone-9c509.firebaseapp.com/askstories/1)
+[News](https://ng-hackernews-clone.surge.sh/news/1)<br>
+[BestStories](https://ng-hackernews-clone.surge.sh/beststories/1)<br>
+[NewStories](https://ng-hackernews-clone.surge.sh/newstories/1)<br>
+[ShowStories](https://ng-hackernews-clone.surge.sh/showstories/1)<br>
+[AskStories](https://ng-hackernews-clone.surge.sh/askstories/1)
 
 ## Development 
 
@@ -31,7 +31,7 @@ App will be live at localhost:4200
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/shubhambattoo/notes-in/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/shubhambattoo/angular-hackernews-clone/issues).
 
 ## Show your support
 
