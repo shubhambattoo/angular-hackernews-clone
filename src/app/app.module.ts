@@ -13,6 +13,8 @@ import { UrlifyPipe } from './pipes/urlify.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { ListItemDetailsComponent } from './list-item-details/list-item-details.component';
 import { CommentCollapsableComponent } from './comment-collapsable/comment-collapsable.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { CommentCollapsableComponent } from './comment-collapsable/comment-colla
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]
