@@ -1,0 +1,52 @@
+.card {
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 30, 84, 0.12), 0 1px 3px rgba(0, 30, 84, 0.08);
+  min-width: 900px;
+
+  .row {
+    margin: 15px 0;
+    display: grid;
+    grid-template-columns: 90px auto;
+
+    .title {
+      font-weight: 500;
+      color: #000;
+      font-size: 18px;
+    }
+
+    .content {
+      color: #777;
+      margin-left: 15px;
+      font-size: 14px;
+      margin-top: 3px;
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+
+  pre.content {
+    color: #777;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .link {
+    display: flex;
+    margin-top: 30px;
+
+    a:nth-of-type(1) {
+      margin-left: 0;
+    }
+
+    a {
+      margin: 0 15px;
+      color: #655;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    min-width: 300px;
+  }
+}

@@ -1,0 +1,25 @@
+.paginator {
+  color: var(--paginator-color);
+  padding-left: 15px;
+  padding-top: 15px;
+  width: 100%;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.1s ease-in;
+
+  &:hover {
+    color: var(--hover-link);
+  }
+}
+
+.jobs-text {
+  color: darkgray;
+  padding: 0 5px;
+  font-size: 13px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}

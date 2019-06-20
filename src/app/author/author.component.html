@@ -1,0 +1,45 @@
+<app-loading *ngIf="grabbingContent"></app-loading>
+
+<div class="card" *ngIf="!grabbingContent">
+
+  <div class="row">
+    <div class="title">
+      User <div class="float-right">:</div>
+    </div>
+    <div class="content">
+      {{username}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="title">
+      Created <div class="float-right">:</div>
+    </div>
+    <div class="content">
+      {{user.showTime()}}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="title">
+      Karma <div class="float-right">:</div>
+    </div>
+    <div class="content">
+      {{user.showKarma()}}
+    </div>
+  </div>
+
+  <div *ngIf="user.about">
+    <pre class="content" [innerHTML]="user.about | urlify">.
+    </pre>
+  </div>
+
+  <div class="link">
+
+    <a href="https://news.ycombinator.com/submitted?id={{username}}" target="_blank">submissions</a>
+    <a href="https://news.ycombinator.com/threads?id={{username}}" target="_blank">comments</a>
+    <a href="https://news.ycombinator.com/favorites?id={{username}}" target="_blank">favorites</a>
+
+  </div>
+
+</div>

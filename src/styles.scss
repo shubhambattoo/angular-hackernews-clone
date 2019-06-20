@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+// variables
+:root {
+  --background: #f1f1f1;
+  --primary-color: #b92b28;
+  --border-color: #e1b12c;
+  --white: #fff;
+  --hover-link: #fff;
+  --card-background: #fff;
+  --footer-color: #000;
+  --card-title-color: #000;
+  --meta-color: #555;
+  --content-color: #666;
+  --link-color: #777;
+  --paginator-color: #b92b28;
+  --comment-color: #555;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+}
+
+// Utilities
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+button {
+  outline: none;
+}
+
+a {
+  color: var(--link-color);
+}
+
+// theming
+.dark {
+  --background: #111;
+  --primary-color: #333;
+  --border-color: #fff;
+  --card-background: #222;
+  --footer-color: #fff;
+  --card-title-color: #fff;
+  --meta-color: #f3f3f3;
+  --content-color: #f1f1f1;
+  --link-color: #fff;
+  --paginator-color: #fff;
+  --comment-color: #fff;
+  .card {
+    box-shadow: none;
+  }
+}

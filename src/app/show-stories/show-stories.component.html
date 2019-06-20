@@ -1,0 +1,22 @@
+<app-loading *ngIf="grabbingContent"></app-loading>
+<div *ngIf="!grabbingContent">
+  <div *ngIf="feed === 'jobs'" class="jobs-text">
+    These are jobs at YC startups. You can apply to many at once through
+    <a href="https://www.workatastartup.com"><u>Work at a Startup</u></a> or
+    <a href="https://triplebyte.com/?ref=yc_jobs"><u>Triplebyte</u></a>,
+    and browse company profiles at
+    <a href="https://www.keyvalues.com/yc-funded-companies"><u>Key Values</u></a> (YC W18).
+  </div>
+  <ul>
+    <li *ngFor="let item of stories;let i = index">
+      <app-list-item [item]="item"></app-list-item>
+    </li>
+  </ul>
+
+  <a class="paginator" *ngIf="listStart !== 1" [routerLink]="['/' + routerLink, pageNum - 1]">
+    prev
+  </a>
+  <a class="paginator" *ngIf="stories?.length === 30" [routerLink]="['/' + routerLink, pageNum + 1]">
+    next
+  </a>
+</div>
