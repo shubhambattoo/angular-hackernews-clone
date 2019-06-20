@@ -1,0 +1,14 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 0;
+  color: var(--footer-color);
+  a {
+    color: var(--footer-color);
+    text-decoration: none;
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}
