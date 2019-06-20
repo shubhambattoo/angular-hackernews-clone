@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ShowStoriesComponent } from './show-stories/show-stories.component';
 import { AuthorComponent } from './author/author.component';
+import { ListItemDetailsComponent } from './list-item-details/list-item-details.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'news/1' },
@@ -12,7 +13,7 @@ const routes: Routes = [
   { path: 'showstories/:page', data: { feed: 'show' }, component: ShowStoriesComponent },
   { path: 'jobstories/:page', data: { feed: 'jobs' }, component: ShowStoriesComponent },
   { path: 'user/:username', component: AuthorComponent },
-  // { path: 'item', component: ListItemDetailsComponent }
+  { path: 'item', component: ListItemDetailsComponent }
 ];
 
 @NgModule({
