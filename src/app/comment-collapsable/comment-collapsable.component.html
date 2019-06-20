@@ -1,3 +1,20 @@
-<p>
-  comment-collapsable works!
-</p>
+<ul class="comment">
+  <div class="head">
+    <a class="author" [routerLink]="['/user', comment.user]">
+      {{comment.user}}
+    </a>
+    <div class="time">
+      {{comment.time_ago}}
+    </div>
+    <button (click)="isActivated = !isActivated" *ngIf="comment.comments.length !== 0">
+      <i class="fas fa-plus" *ngIf="!isActivated"></i>
+      <i class="fas fa-minus" *ngIf="isActivated"></i>
+    </button>
+  </div>
+  <pre class="content" [innerHTML]="comment.content"></pre>
+</ul>
+<ng-container *ngIf="isActivated">
+  <li *ngFor="let kid of comment.comments" class="pl-5">
+    <app-comment-collapsable [comment]="kid"></app-comment-collapsable>
+  </li>
+</ng-container>

@@ -1,0 +1,35 @@
+.comment {
+  margin-bottom: 15px;
+  padding: 0;
+  .head {
+    div,
+    a {
+      display: inline-block;
+      margin-right: 15px;
+      font-size: 15px;
+    }
+    .author {
+      color: var(--card-title-color);
+      text-decoration: none;
+    }
+    button {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      cursor: pointer;
+    }
+  }
+  .content {
+    color: var(--comment-color);
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-bottom: 1px solid darkgray;
+    padding: 15px 0;
+    font-size: 13px;
+    line-height: 22px;
+  }
+}
+
+.pl-5 {
+  padding-left: 1.5rem;
+}
