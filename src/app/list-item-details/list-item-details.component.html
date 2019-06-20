@@ -1,0 +1,41 @@
+<app-loading *ngIf="grabbing"></app-loading>
+
+<div *ngIf="!grabbing">
+
+
+  <div class="card">
+
+    <div class="card-head">
+
+      <div class="title">
+        {{itemDetails.title}}
+      </div>
+
+    </div>
+
+    <pre class="content" [innerHTML]="itemDetails.content" *ngIf="itemDetails.content">
+  </pre>
+
+    <small *ngIf="itemDetails.url">
+      <a [href]="itemDetails.url">{{itemDetails.url}}</a>
+    </small>
+
+    <div class="card-footer">
+      <div>{{itemDetails.points}} point(s) by <span
+          [routerLink]="['/user', itemDetails.user]">{{itemDetails.user}}</span> </div>
+      <div>{{itemDetails.time_ago}}</div>
+    </div>
+
+  </div>
+
+  <div class="card comments">
+
+    <ul>
+      <li *ngFor="let comment of itemDetails.comments">
+        <app-comment-collapsable [comment]="comment"></app-comment-collapsable>
+      </li>
+    </ul>
+
+  </div>
+
+</div>

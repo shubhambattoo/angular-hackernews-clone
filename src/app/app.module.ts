@@ -9,6 +9,10 @@ import { LoadingComponent } from './loading/loading.component';
 import { AuthorComponent } from './author/author.component';
 import { ShowStoriesComponent } from './show-stories/show-stories.component';
 import { ListItemComponent } from './list-item/list-item.component';
+import { UrlifyPipe } from './pipes/urlify.pipe';
+import { HttpClientModule } from '@angular/common/http';
+import { ListItemDetailsComponent } from './list-item-details/list-item-details.component';
+import { CommentCollapsableComponent } from './comment-collapsable/comment-collapsable.component';
 
 @NgModule({
   declarations: [
@@ -18,10 +22,14 @@ import { ListItemComponent } from './list-item/list-item.component';
     LoadingComponent,
     AuthorComponent,
     ShowStoriesComponent,
-    ListItemComponent
+    ListItemComponent,
+    UrlifyPipe,
+    ListItemDetailsComponent,
+    CommentCollapsableComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

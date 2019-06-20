@@ -1,0 +1,94 @@
+header {
+  width: 100%;
+  background: var(--primary-color);
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  nav {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    padding: 0 20px;
+    max-width: 880px;
+    margin: 0 auto;
+    .d-flex {
+      display: flex;
+      padding: 10px 0;
+      line-height: 5px;
+      .brand {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: var(--white);
+        font-weight: 500;
+        border: 3px solid var(--white);
+        font-size: 13px;
+        outline: none;
+        cursor: pointer;
+      }
+      ul {
+        list-style-type: none;
+        display: flex;
+        margin-left: -15px;
+        li {
+          margin-right: 20px;
+          letter-spacing: 0.5px;
+          a {
+            text-decoration: none;
+            color: var(--white);
+            font-size: 14px;
+            padding-bottom: 18px;
+            &:hover {
+              color: var(--hover-link);
+              border-bottom: 4px solid var(--border-color);
+            }
+          }
+        }
+        @media screen and (max-width: 360px) {
+          margin-left: -28px;
+        }
+      }
+    }
+    .active-link {
+      border-bottom: 4px solid var(--border-color);
+    }
+    .cog {
+      line-height: 60px;
+      cursor: pointer;
+      i {
+        color: var(--white);
+        font-size: 20px;
+        transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        &:hover {
+          transform: rotate(90deg);
+        }
+      }
+    }
+    .dropdown-menu {
+      position: absolute;
+      background: var(--primary-color);
+      right: 0;
+      top: 60px;
+      .dropdown-list {
+        ul {
+          list-style-type: none;
+          padding: 10px;
+          margin: 0;
+          li {
+            margin: 5px 0;
+            a {
+              font-size: 14px;
+              font-weight: 600;
+              color: var(--border-color);
+              text-decoration: none;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
