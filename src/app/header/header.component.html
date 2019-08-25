@@ -26,21 +26,21 @@
 
     <div class="cog" (click)="showDropDownEvent()">
       <i class="fas fa-cog"></i>
-	</div>
-	
-	<div class="dropdown-menu" [ngClass]="showDropdown ? 'd-block' : 'd-none'" >
+    </div>
 
-		<div class="dropdown-list">
+    <div class="dropdown-menu" [ngClass]="showDropdown ? 'd-block' : 'd-none'">
 
-			<ul>
-				<li><a (click)="changeTheme('default')">Default(Light)</a></li>
-				<li><a (click)="changeTheme('dark')">Night Dark</a></li>
-				<!-- <li><a (click)="changeTheme('amoled')">Black Amoled</a></li> -->
-			</ul>
+      <div class="dropdown-list">
 
-		</div>
+        <ul>
+          <li><a (click)="changeTheme('default')">Default(Light)</a></li>
+          <li><a (click)="changeTheme('dark')">Night Dark</a></li>
+          <!-- <li><a (click)="changeTheme('amoled')">Black Amoled</a></li> -->
+        </ul>
 
-	</div>
+      </div>
+
+    </div>
 
   </nav>
 </header>
