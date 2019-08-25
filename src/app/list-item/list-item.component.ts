@@ -1,22 +1,19 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-list-item',
-  templateUrl: './list-item.component.html',
-  styleUrls: ['./list-item.component.scss']
+  selector: "app-list-item",
+  templateUrl: "./list-item.component.html",
+  styleUrls: ["./list-item.component.scss"]
 })
 export class ListItemComponent implements OnInit {
+  @Input() item : any;
+  @Input() index : any;
 
-  @Input() item;
-  @Input() index;
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  goToStory(link) {
+    link ? window.open(link, "blank") : false;
   }
-
-  goToStory (link) {
-    link ? window.open(link, 'blank') : false;
-  }
-
 }

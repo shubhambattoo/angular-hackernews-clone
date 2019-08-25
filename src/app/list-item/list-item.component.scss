@@ -3,7 +3,6 @@
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 30, 84, 0.12), 0 1px 3px rgba(0, 30, 84, 0.08);
-  cursor: pointer;
   transition: all 0.15s ease;
   margin-bottom: 15px;
   display: block;
@@ -26,6 +25,19 @@
         font-weight: 500;
         font-size: 17px;
         color: var(--card-title-color);
+
+        &--link {
+          font-weight: 500;
+          font-size: 17px;
+          color: var(--card-title-color);
+          margin-right: 5px;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
         span {
           font-size: 13px;
           a {
