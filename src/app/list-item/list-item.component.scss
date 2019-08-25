@@ -6,9 +6,13 @@
   cursor: pointer;
   transition: all 0.15s ease;
   margin-bottom: 15px;
+  display: block;
+  text-decoration: none;
+
   &:hover {
     box-shadow: 0 8px 16px rgba(0, 30, 84, 0.1), 0 3px 6px rgba(0, 30, 84, 0.08);
     color: var(--hover-link);
+    text-decoration: none;
   }
   .card-header {
     .num {

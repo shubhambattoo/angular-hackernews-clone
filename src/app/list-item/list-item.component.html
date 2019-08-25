@@ -1,19 +1,20 @@
-<div class="card" (click)="goToStory(item.url)">
+<a class="card" [href]="item.url">
 
   <div class="card-header">
 
     <div class="card-header__content">
       <div class="content__title">
-        {{item.title}} <span><a href="{{item.domain}}">{{item.domain}}</a></span>
+        {{item.title}} <span><a href="https://news.ycombinator.com/from?site={{item.domain}}">{{item.domain}}</a></span>
       </div>
       <div class="content__meta">
-        <span class="points" *ngIf="item.points">{{item.points}} points by </span> <span class="author"
-          *ngIf="item.user" [routerLink]="['/user', item.user]">{{item.user}}</span> <span
-          class="time">{{item.time_ago}}</span> <span class="comments" [routerLink]="['/item']"
-          [queryParams]="{id : item.id}">{{item.comments_count}} comments</span>
+        <span class="points" *ngIf="item.points">{{item.points}} points by </span>
+        <span class="author" *ngIf="item.user" [routerLink]="['/user', item.user]">{{item.user}}</span>
+        <span class="time">{{item.time_ago}}</span>
+        <span class="comments" [routerLink]="['/item']" [queryParams]="{id : item.id}">{{item.comments_count}}
+          comments</span>
       </div>
     </div>
 
   </div>
 
-</div>
+</a>

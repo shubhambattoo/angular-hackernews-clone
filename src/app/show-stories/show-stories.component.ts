@@ -11,10 +11,10 @@ import { HackernewsApiService } from "../services/hackernews-api.service";
 })
 export class ShowStoriesComponent implements OnInit {
   stories: Story[];
-  feed;
-  pageNum;
-  listStart;
-  routerLink;
+  feed : string;
+  pageNum : number;
+  listStart : number;
+  routerLink : string;
   grabbingContent = true;
 
   constructor(
@@ -30,6 +30,7 @@ export class ShowStoriesComponent implements OnInit {
     this.activatedRoute.url.subscribe(data => (this.routerLink = data[0].path));
 
     this.activatedRoute.params.subscribe(params => {
+      this.grabbingContent = true;
       this.pageNum = params["page"] ? +params["page"] : 1;
       // console.log(params['page'])
       this.getFeed(this.feed, this.pageNum);
