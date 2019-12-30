@@ -21,7 +21,7 @@
     "@angular/pwa": "^0.803.20",
     "@angular/router": "~8.2.14",
     "@angular/service-worker": "~8.2.14",
-    "rxjs": "~6.5.3",
+    "rxjs": "~6.5.4",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
   },
