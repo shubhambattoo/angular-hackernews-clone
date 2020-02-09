@@ -12,11 +12,16 @@
       color: var(--card-title-color);
       text-decoration: none;
     }
+
+    .time {
+      color: var(--card-title-color);
+    }
     button {
       background: transparent;
       border: none;
       box-shadow: none;
       cursor: pointer;
+      color: var(--card-title-color);
     }
   }
   .content {
@@ -28,6 +33,10 @@
     font-size: 13px;
     line-height: 22px;
   }
+}
+
+pre {
+  margin: 0;
 }
 
 .pl-5 {

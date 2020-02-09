@@ -24,9 +24,14 @@
       </ul>
     </div>
 
-    <div class="cog" (click)="showDropDownEvent()">
+    <!-- <div class="cog" (click)="showDropDownEvent()">
       <i class="fas fa-cog"></i>
-    </div>
+    </div> -->
+
+    <label class="switch">
+      <input type="checkbox" name="switch" [(ngModel)]="switch" (ngModelChange)="switchTheme()">
+      <span class="slider round"></span>
+    </label>
 
     <div class="dropdown-menu" [ngClass]="showDropdown ? 'd-block' : 'd-none'">
 
