@@ -49,7 +49,7 @@ header {
             }
           }
         }
-        @media screen and (max-width: 375px) {
+        @media screen and (max-width: 400px) {
           margin-left: -28px;
 
           li {
@@ -62,7 +62,7 @@ header {
       border-bottom: 4px solid var(--border-color);
     }
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 400px) {
       padding: 0 10px;
     }
   }
@@ -74,7 +74,7 @@ header {
   width: 60px;
   height: 34px;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 400px) {
     width: 48px;
   }
 }
@@ -124,7 +124,7 @@ input:focus + .slider {
 input:checked + .slider:before {
   transform: translateX(26px);
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 400px) {
     transform: translateX(18px);
   }
 }
