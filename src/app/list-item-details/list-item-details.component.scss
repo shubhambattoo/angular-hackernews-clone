@@ -26,6 +26,7 @@
   .card-footer {
     display: flex;
     margin-top: 15px;
+    color: var(--footer-color);
     div:first-child {
       &::after {
         content: "|";

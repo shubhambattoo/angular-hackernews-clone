@@ -6,7 +6,13 @@
       "name": "app",
       "installMode": "prefetch",
       "resources": {
-        "files": ["/favicon.ico", "/index.html", "/*.css", "/*.js"],
+        "files": [
+          "/favicon.ico",
+          "/index.html",
+          "/*.css",
+          "/*.js",
+          "/manifest.webmanifest"
+        ],
         "urls": [
           "https://use.fontawesome.com/releases/v5.6.3/css/all.css",
           "https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600i"

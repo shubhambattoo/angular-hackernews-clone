@@ -15,7 +15,8 @@ import { ListItemDetailsComponent } from "./list-item-details/list-item-details.
 import { CommentCollapsableComponent } from "./comment-collapsable/comment-collapsable.component";
 import { ServiceWorkerModule, SwUpdate } from "@angular/service-worker";
 import { environment } from "../environments/environment";
-import { HackernewsApiService } from './services/hackernews-api.service';
+import { HackernewsApiService } from "./services/hackernews-api.service";
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -33,14 +34,13 @@ import { HackernewsApiService } from './services/hackernews-api.service';
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     AppRoutingModule,
     ServiceWorkerModule.register("ngsw-worker.js", {
       enabled: environment.production
     })
   ],
-  providers: [
-    HackernewsApiService
-  ],
+  providers: [HackernewsApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

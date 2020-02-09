@@ -73,3 +73,19 @@
     }
   }
 }
+@media screen and (max-width: 375px) {
+  .card {
+    padding: 10px 10px 15px;
+
+    .card-header {
+      &__content {
+        margin-left: 5px !important;
+        .content__title {
+          &--link {
+            font-size: 15px !important;
+          }
+        }
+      }
+    }
+  }
+}
