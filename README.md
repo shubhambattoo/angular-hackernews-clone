@@ -1,7 +1,7 @@
 # HackernewsClone Made with Angular
 This is a PWA , can be installed on any smartphone and used as an Web APP. (Without login)
 
-![](hackernews.PNG)
+![](hackernews.png)
 
 [Live Demo](https://ng-hackernews-clone.surge.sh)
 
