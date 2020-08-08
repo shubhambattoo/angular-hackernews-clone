@@ -1,9 +1,10 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input, ViewEncapsulation } from "@angular/core";
 
 @Component({
   selector: "app-comment-collapsable",
   templateUrl: "./comment-collapsable.component.html",
-  styleUrls: ["./comment-collapsable.component.scss"]
+  styleUrls: ["./comment-collapsable.component.scss"],
+  encapsulation: ViewEncapsulation.None,
 })
 export class CommentCollapsableComponent implements OnInit {
   @Input() comment;
@@ -11,7 +12,6 @@ export class CommentCollapsableComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    // console.log(this.kids)
   }
   public isActivated = false;
   public kids = [];

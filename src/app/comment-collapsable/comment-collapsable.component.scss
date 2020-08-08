@@ -29,10 +29,15 @@
     white-space: pre-wrap;
     word-wrap: break-word;
     border-bottom: 1px solid darkgray;
-    padding: 15px 0;
+    padding: 0 0 15px;
     font-size: 13px;
     line-height: 22px;
   }
+}
+
+.content code {
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
 }
 
 pre {
