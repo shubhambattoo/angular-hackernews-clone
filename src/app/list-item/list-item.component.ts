@@ -12,8 +12,4 @@ export class ListItemComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-
-  goToStory(link) {
-    link ? window.open(link, "blank") : false;
-  }
 }

@@ -32,7 +32,7 @@ import { FormsModule } from "@angular/forms";
     CommentCollapsableComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
