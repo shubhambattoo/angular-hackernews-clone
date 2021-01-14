@@ -1,18 +1,19 @@
 import { Component, OnInit } from "@angular/core";
+import { LocalstorageService } from "../services/localstorage.service";
 
 @Component({
   selector: "app-header",
   templateUrl: "./header.component.html",
-  styleUrls: ["./header.component.scss"]
+  styleUrls: ["./header.component.scss"],
 })
 export class HeaderComponent implements OnInit {
   showDropdown = false;
   theme: string;
   switch = false;
-  constructor() {}
+  constructor(private localstorageService: LocalstorageService) {}
 
   ngOnInit() {
-    this.theme = localStorage.getItem("theme");
+    this.theme = this.localstorageService.getItem("theme");
     this.switch = this.theme === "dark" ? true : false;
     this.changeTheme(this.theme);
   }
@@ -28,10 +29,10 @@ export class HeaderComponent implements OnInit {
   changeTheme(theme) {
     if (theme === "dark") {
       document.querySelector("body").classList.add("dark");
-      localStorage.setItem("theme", "dark");
+      this.localstorageService.setItem("theme", "dark");
     } else if (theme === "default") {
       document.querySelector("body").classList.remove("dark");
-      localStorage.setItem("theme", "default");
+      this.localstorageService.setItem("theme", "default");
     }
   }
 }
