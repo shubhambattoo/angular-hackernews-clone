@@ -175,5 +175,7 @@
       }
     }
   },
-  "defaultProject": "HackerNews-Clone"
+  "cli": {
+    "analytics": false
+  }
 }
